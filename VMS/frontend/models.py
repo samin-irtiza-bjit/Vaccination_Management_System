@@ -4,7 +4,6 @@ from django.db import models
 # Define the User model
 class User(models.Model):
     # Define the fields
-    # id = models.IntegerField(primary_key=True) # PK
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=200)
     nid = models.IntegerField()
@@ -16,7 +15,6 @@ class User(models.Model):
 # Define the Vaccine model
 class Vaccine(models.Model):
     # Define the fields
-    # vaccine_id = models.IntegerField(primary_key=True) # PK
     vaccine_name = models.CharField(max_length=50)
 
     # Define a string representation of the model
